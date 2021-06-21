@@ -1,60 +1,58 @@
 /* Content Wrap
 ###########################################################################  */
 
-.content-wrap{
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--light);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.content-wrap {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
 }
 
 .content-wrap:nth-child(even) {
-  background-color: var(--lighter);
+    background-color: var(--lighter);
 }
 
 
 /* Card
 ###########################################################################  */
 
-.card{
-  width: clamp(300px, 50%, 800px);
-  background-color: var(--lightest);
-  border-radius: var(--radius-m);
-  overflow: hidden;
-  box-shadow: var(--n-shadow-l);
+.card {
+    overflow: hidden;
+    width: clamp(300px, 50%, 800px);
+    background-color: var(--lightest);
+    border-radius: var(--radius-m);
+    box-shadow: var(--n-shadow-l);
 }
 
 .card img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
-.card figcaption{
-  /* padding: var(--l) var(--m) var(--xl) var(--m); */
-  display: none;
+.card figcaption {
+    /* padding: var(--l) var(--m) var(--xl) var(--m); */
+    display: none;
 }
-
 
 .card header {
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: var(--m);
-  background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,0.8));
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: var(--m);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
 }
 
 .card header h2 {
-  padding:0;
-  margin:0;
-  text-shadow: var(--shadow-l);
+    padding: 0;
+    margin: 0;
+    text-shadow: var(--shadow-l);
 }
 
 .card header p {
-  color: var(--lightest);
+    color: var(--lightest);
 }
 
 
@@ -63,10 +61,9 @@
 ###########################################################################  */
 
 .overview {
-  display: grid;
-  padding: var(--m);
-  margin: 0;
-  gap: var(--m);
-  grid-template-columns: repeat(auto-fit, minmax(calc(var(--m)*20), 1fr));
+    display: grid;
+    padding: var(--m);
+    margin: 0;
+    gap: var(--m);
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--m) *20), 1fr));
 }
-
